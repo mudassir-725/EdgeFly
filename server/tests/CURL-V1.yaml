@@ -1,0 +1,29 @@
+# ✅ Amadeus Fix: Confirm Amadeus test credentials are active:
+curl -X POST "https://test.api.amadeus.com/v1/security/oauth2/token" -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=client_credentials&client_id=73UcCByoVDFlLzbdzSnnjspUiiGfpbTo&client_secret=LEkYJ2Ttr6YKkdjX"
+
+# 🧩 1. Register a New User
+curl -X POST "http://localhost:5000/api/auth/register" -H "Content-Type: application/json" -d '{"name":"Test User","email":"test@example.com","password":"Secret123"}'
+
+# 🧩 2. User Login to get JWT Token
+curl -X POST "http://localhost:5000/api/auth/login" -H "Content-Type: application/json" -d '{"email":"test@example.com","password":"Secret123"}'
+
+# 🧩 3. Authenticated Flight Search (Replace <JWT_TOKEN> with the token from login)
+curl -X POST "http://localhost:5000/api/flights" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTUsImVtYWlsIjoidGVzdEBleGFtcGxlLmNvbSIsImlhdCI6MTc2MTQ5NDIxNSwiZXhwIjoxNzYxNDk3ODE1fQ.7EWOUZRDujqi-JMZSO4lgdxvwpSPEnsQ1lHXUZCYGXc" -H "Content-Type: application/json" -d '{"origin":"HYD","destination":"DXB","departureDate":"2025-10-25","returnDate":"2025-10-31","travelClass":"ECONOMY","passengers":1}'
+
+# 🌐 4. Guest Flight Search (No login)
+curl -X POST "http://localhost:5000/api/flights/guest" -H "Content-Type: application/json" -d '{"origin":"HYD","destination":"DXB","departureDate":"2025-10-25","returnDate":"2025-10-31","travelClass":"ECONOMY","passengers":1}'
+curl -X POST "http://localhost:5000/api/flights/guest" -H "Content-Type: application/json" -d '{"origin":"HYD","destination":"DXB","departureDate":"2025-10-25","returnDate":"2025-10-31","travelClass":"ECONOMY","passengers":1}'
+curl -X POST "http://localhost:5000/api/flights/guest" -H "Content-Type: application/json" -d '{"origin":"LHR","destination":"JFK","departureDate":"2024-10-25","returnDate":"2024-10-31","travelClass":"ECONOMY","passengers":1}'
+curl -X POST "http://localhost:5000/api/flights" -H "Content-Type: application/json" -d '{"origin":"LHR","destination":"JFK","departureDate":"2024-10-25","returnDate":"2024-10-31","travelClass":"ECONOMY","passengers":1}'
+
+# 🔐 5. Access Protected Route without Token (Should fail)
+curl -X POST "http://localhost:5000/api/flights" -H "Content-Type: application/json" -d '{"origin":"HYD","destination":"DXB","departureDate":"2025-10-25","returnDate":"2025-10-31","travelClass":"ECONOMY","passengers":1}'
+
+# 🔄 6. Refresh JWT Token (Replace <JWT_TOKEN> with the token from login)
+curl -X POST "http://localhost:5000/api/auth/refresh" -H "Authorization: Bearer <JWT_TOKEN>"
+
+# 🛠 Bonus — Verify Logged-in User
+curl -X GET "http://localhost:5000/api/auth/me" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTUsImVtYWlsIjoidGVzdEBleGFtcGxlLmNvbSIsImlhdCI6MTc2MTQ5NDIxNSwiZXhwIjoxNzYxNDk3ODE1fQ.7EWOUZRDujqi-JMZSO4lgdxvwpSPEnsQ1lHXUZCYGXc"
+
+# Others
+curl -X POST "http://localhost:5000/api/flights/guest"  -H "Content-Type: application/json" -d '{"origin":"MAD","destination":"NYC","departureDate":"2024-10-25","returnDate":"2024-10-31","travelClass":"ECONOMY","passengers":1}'

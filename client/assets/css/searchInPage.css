@@ -1,0 +1,32 @@
+/* client/assets/css/searchInPage.css */
+/* 🔍 EdgeFly Highlight Styles */
+.edgefly-highlight {
+    background-color: #ffbb00b3;
+    color: #000;
+    /* padding: 2px 4px; */
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.edgefly-highlight:hover {
+    background-color: #ffd75ebf;
+}
+
+/* ✨ Subtle pulse animation for active match */
+@keyframes pulseHighlight {
+    0% {
+        background-color: #ffbb00b3;
+    }
+
+    50% {
+        background-color: #ffcc33;
+    }
+
+    100% {
+        background-color: #ffbb00b3;
+    }
+}
+
+.edgefly-highlight.pulse {
+    animation: pulseHighlight 1s ease-in-out;
+}

@@ -1,0 +1,140 @@
+<!-- ← ↔ → -->
+
+<!-- Wishlist Container -->
+<div id="wishlist-container" class="mt-4"></div>
+
+<!-- Search History Container -->
+<div id="search-history" class="mt-4"></div>
+
+<!-- Recommendations container -->
+<div id="recommendations" class="mt-4"></div>
+
+<!-- Small Dashboard -->
+<div id="dashboard-root" class="mt-4"></div>
+
+<!-- User Suggestions (Past + Upcomming) -->
+<section
+  class="flex flex-col gap-12 flex-grow max-w-4xl container mx-auto p-6 py-12"
+>
+  <!-- Past Trips -->
+  <section id="past-trips" class="">
+    <h2 class="text-2xl font-bold font-display mb-6">Past Trips</h2>
+    <div class="grid gap-8">
+      <div
+        class="bg-card-light dark:bg-card-dark rounded-lg overflow-hidden shadow-sm border border-border-light dark:border-border-dark flex flex-col md:flex-row items-stretch hover:shadow-lg transition-shadow duration-300"
+      >
+        <div class="p-6 flex-grow flex flex-col justify-center">
+          <p
+            class="text-sm text-text-muted-light dark:text-text-muted-dark font-body mb-1"
+          >
+            Flight ID: 345678
+          </p>
+          <h3
+            class="text-xl font-bold font-interface text-text-light dark:text-text-dark mb-2"
+          >
+            Paris to Rome
+          </h3>
+          <p
+            class="text-sm text-text-muted-light dark:text-text-muted-dark font-body"
+          >
+            Searched: June 5, 2025
+          </p>
+        </div>
+        <div
+          class="md:w-1/3 w-full h-48 md:h-auto bg-cover bg-center"
+          style="
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWAoJqhp0eR5lmHYWMpGITY5exXEZIbsmSJCpv86NX70nzOpRIcQ_xHGy_4yjlx4KK76dLxhpKNmvttrbA4wS5_2-XqtpYZ-wJRLKq3268dV4hGfxhvusX-0lbejqBtCBayHP_thYBL8ublJ2yVxPo1wZzVBFlBQncNetlSUdqiWYNpkVUUkqQxOpyhqbL6jlECMKsIM-cYVUIV3U9fOjhh8o47L3wicM40p62ZucL_n7nPDP8HopkSxCpWmtsm-xIXXRLd6TNKF0');
+          "
+        ></div>
+      </div>
+      <div
+        class="bg-card-light dark:bg-card-dark rounded-lg overflow-hidden shadow-sm border border-border-light dark:border-border-dark flex flex-col md:flex-row items-stretch hover:shadow-lg transition-shadow duration-300"
+      >
+        <div class="p-6 flex-grow flex flex-col justify-center">
+          <p
+            class="text-sm text-text-muted-light dark:text-text-muted-dark font-body mb-1"
+          >
+            Flight ID: 901234
+          </p>
+          <h3
+            class="text-xl font-bold font-interface text-text-light dark:text-text-dark mb-2"
+          >
+            Sydney to Auckland
+          </h3>
+          <p
+            class="text-sm text-text-muted-light dark:text-text-muted-dark font-body"
+          >
+            Searched: May 10, 2025
+          </p>
+        </div>
+        <div
+          class="md:w-1/3 w-full h-48 md:h-auto bg-cover bg-center"
+          style="
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDiNE-TaZZuJGmGa8voOjM4-ynBuhUg3SORc0SpnMUaBai6e2I8t-7iQvQtbnvuKrlNQSXXtswGgI-7vvXtjafcncE9_kbl5YOS4BqoAjH8Cb6hVcnYawCPZtxGMp_ZEziKtXUF8cSNBEdyT8OiJw59uCF5F53hGaWjwmkYZ66AP8iXmCTI2ngX0fOrKKGQCD2US-yaViPDkLiepXdkGklJpJkesep_waY2NflCA6VNkj62WsXpu0r9jgemot2XDrOcipela2UQq4I');
+          "
+        ></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Trips -->
+  <section id="upcoming-trips" class="">
+    <h2 class="text-2xl font-bold font-display mb-6">Upcoming Trips</h2>
+    <div id="upcoming-trips-container" class="grid gap-8">
+      <div
+        class="bg-card-light dark:bg-card-dark rounded-lg overflow-hidden shadow-sm border border-border-light dark:border-border-dark flex flex-col md:flex-row items-stretch hover:shadow-lg transition-shadow duration-300"
+      >
+        <div class="p-6 flex-grow flex flex-col justify-center">
+          <p
+            class="text-sm text-text-muted-light dark:text-text-muted-dark font-body mb-1"
+          >
+            Flight ID: 123456
+          </p>
+          <h3
+            class="text-xl font-bold font-interface text-text-light dark:text-text-dark mb-2"
+          >
+            New York to London
+          </h3>
+          <p
+            class="text-sm text-text-muted-light dark:text-text-muted-dark font-body"
+          >
+            Departure: July 15, 2025, 10:00 AM
+          </p>
+        </div>
+        <div
+          class="md:w-1/3 w-full h-48 md:h-auto bg-cover bg-center"
+          style="
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWZDQIV27Sx5MzvmtwVCoAzttnjlcAULBNAAMdWzDO9xbTmJwU8WG2e93CJRhpZCGuKx_WuI81vfRN-IYw6WW_L5GC2VyAaKA7cMUn4eDEDu7hquJOre0T1fUba-U07Tc_nXuiBlaRrU_dEKgzQXYl8b3jtPLV_BOCn2TLrnLlB95vl2evkK3f2BlUExSZh5GYo1_XqjvA3N-OnSzrHic0UWNTen5hfi0nlXxkSLLCm1zaMo6JrL8hxp7UEC0415pNOmPCm-V8on0');
+          "
+        ></div>
+      </div>
+      <div
+        class="bg-card-light dark:bg-card-dark rounded-lg overflow-hidden shadow-sm border border-border-light dark:border-border-dark flex flex-col md:flex-row items-stretch hover:shadow-lg transition-shadow duration-300"
+      >
+        <div class="p-6 flex-grow flex flex-col justify-center">
+          <p
+            class="text-sm text-text-muted-light dark:text-text-muted-dark font-body mb-1"
+          >
+            Flight ID: 789012
+          </p>
+          <h3
+            class="text-xl font-bold font-interface text-text-light dark:text-text-dark mb-2"
+          >
+            Los Angeles to Tokyo
+          </h3>
+          <p
+            class="text-sm text-text-muted-light dark:text-text-muted-dark font-body"
+          >
+            Departure: August 20, 2025, 2:00 PM
+          </p>
+        </div>
+        <div
+          class="md:w-1/3 w-full h-48 md:h-auto bg-cover bg-center"
+          style="
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCnhzZ0mmDbmqnWuls1MSsRFsQvQ6-rBcAA9S4K6HM_BKrVzmHhmY57xSzGCyGSNcZPzd1wmf-zLWHelDDBAHFetQHzos_9McFpD3LYVusjNZIP-9ipWLkE39mE0IhYXZ1aeTvzpNp2ke4jLMh0QeSBkZKVDVF-G7rRfWOzJJxevSqgfL9g4q6NWsOckXxClXxOKq8nw3WcQCvbxISg3PhxtaVmfgcuffJYHMn2PBruyb8-430giBEO-_MkHdnvvKJ2y1jHzvKy1Sk');
+          "
+        ></div>
+      </div>
+    </div>
+  </section>
+</section>

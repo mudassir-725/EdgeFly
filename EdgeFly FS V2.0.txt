@@ -1,0 +1,133 @@
+// EdgeFly/EdgeFly FS V2.0.txt
+
+EdgeFly/
+│
+├── docker-compose.yml
+├── EdgeFly CMD.sh
+├── EdgeFly FS V1.7.txt
+├── EdgeFly FS V1.8.6.txt
+├── EdgeFly TO V1.8.6.txt
+├── package-lock.json
+│
+├── client/
+│   ├── index.html
+│   │
+│   ├── assets/
+│   │   ├── css/
+│   │   │   ├── global.css
+│   │   │   └── searchInPage.css
+│   │   │
+│   │   ├── data/
+│   │   │   ├── IATAtoAIRLINE.json
+│   │   │   └── IATAtoCITY.json
+│   │   │
+│   │   └── images/
+│   │       └── airlines/
+│   │           ├── AA.svg
+│   │           ├── AI.svg
+│   │           ├── DL.svg
+│   │           ├── EK.svg
+│   │           ├── RJ.svg
+│   │           └── UA.svg
+│   │
+│   ├── data/
+│   │   ├── IATAtoAIRLINE.json
+│   │   └── IATAtoCITY.json
+│   │
+│   ├── js/
+│   │   ├── api.js
+│   │   ├── authGuard.js
+│   │   ├── common.js
+│   │   ├── dashboard.js
+│   │   ├── detailsModal.js
+│   │   ├── eli.js
+│   │   ├── history.js
+│   │   ├── iataUtils.js
+│   │   ├── loader.js
+│   │   ├── navGuard.js
+│   │   ├── profile.js
+│   │   ├── recommendations.js
+│   │   ├── renderCard.js
+│   │   ├── reusables.js
+│   │   ├── searchInPage.js
+│   │   ├── searchResults.js
+│   │   ├── ui.js
+│   │   ├── wishlist.js
+│   │   │
+│   │   └── utils/
+│   │       ├── 1.html
+│   │       └── iataUtils.js
+│   │
+│   ├── pages/
+│   │   ├── dashboard.html
+│   │   ├── docs.html
+│   │   ├── get_started.html
+│   │   ├── history.html
+│   │   ├── profile.html
+│   │   ├── recommendations.html
+│   │   ├── search_results.html
+│   │   └── wishlist.html
+│   │
+│   └── styles/
+│
+└── server/
+    ├── .env
+    ├── package.json
+    ├── package-lock.json
+    │
+    ├── assets/
+    ├── dump/
+    ├── logs/
+    ├── node_modules/
+    ├── tests/
+    │
+    └── src/
+        ├── app.js
+        ├── server.js
+        │
+        ├── config/
+        │   └── db.js
+        │
+        ├── controllers/
+        │   ├── agentController.js
+        │   ├── agentController copy.js
+        │   ├── agentController copy 2.js
+        │   ├── agentControllerS.js
+        │   ├── agentControllerSS.js
+        │   ├── authController.js
+        │   ├── dashboardController.js
+        │   ├── flightController.js
+        │   └── recommendationController.js
+        │
+        ├── middleware/
+        │   ├── authMiddleware.js
+        │   ├── errorHandler.js
+        │   ├── logging.js
+        │   └── rateLimiter.js
+        │
+        ├── models/
+        │   ├── index.js
+        │   ├── SearchHistory.js
+        │   ├── searchModel.js
+        │   ├── User.js
+        │   ├── userModel.js
+        │   └── wishlistModel.js
+        │
+        ├── routes/
+        │   ├── agentRoutes.js
+        │   ├── authRoutes.js
+        │   ├── dashboardRoutes.js
+        │   ├── flightRoutes.js
+        │   ├── recommendationRoutes.js
+        │   ├── searchRoutes.js
+        │   └── wishlistRoutes.js
+        │
+        ├── services/
+        │   ├── amadeusService.js
+        │   ├── db.js
+        │   ├── geminiService.js
+        │   └── geminiService copy.js
+        │
+        └── utils/
+            ├── cleanupOldHistory.js
+            └── memoryStore.js
