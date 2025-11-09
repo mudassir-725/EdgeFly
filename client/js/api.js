@@ -7,7 +7,8 @@
 // const API_BASE = window.API_BASE || "http://localhost:5000/api";
 // Example base URL setup
 
-const API_BASE = "https://edgefly.onrender.com";
+// const API_BASE = "https://edgefly.onrender.com";
+const API_BASE = "https://edgefly.onrender.com/api";
 const TOKEN_KEY = "edgefly_token"; // single source of truth for token key
 
 // ---------------- Token helpers ----------------
@@ -213,6 +214,7 @@ const defaultExport = {
 };
 
 export default defaultExport;
+
 
 
 
