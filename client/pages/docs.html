@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>EdgeFly — Docs</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/searchInPage.css" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#f7ce87",
+              "background-light": "#fcfaf8",
+              "background-dark": "#1c160d",
+              "foreground-light": "#1c160d",
+              "foreground-dark": "#fcfaf8",
+              "card-light": "#ffffff",
+              "card-dark": "#2a2217",
+              "subtle-light": "#f3efe7",
+              "subtle-dark": "#3a3123",
+              "accent-light": "#9b7d4b",
+              "accent-dark": "#cda768",
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+              heading: ["Lora", "serif"],
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "1.5rem",
+              xl: "2rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      html,
+      body {
+        font-family: "Geist", monospace;
+        max-width: 1850px;
+        margin: 0 auto; /* Horizontally centers the body */
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      /* ✨ Fade-in Animation for Sections */
+      .fade-in-start {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      }
+
+      .fade-in-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+      .slow-transitions {
+        transition: all 0.3s ease-in-out;
+      }
+
+      img,
+      label,
+      button,
+      svg,
+      a,
+      span,
+      .material-symbols-outlined {
+        user-select: none;
+      }
+      /* ========== Heartbeat Animation ========== */
+      @keyframes heartbeat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+
+        50% {
+          transform: scale(1.1);
+        }
+      }
+
+      .heartbeat {
+        display: inline-block;
+        animation: heartbeat 1s ease-in-out infinite;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-background-light dark:bg-background-dark font-display text-foreground-light dark:text-foreground-dark"
+  >
+    <!-- Docs Header -->
+    <header
+      class="fixed mx-auto w-full select-none slow-transitions px-6 lg:px-20 top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-border-light dark:border-border-dark shadow-sm"
+    >
+      <!-- Navigation Links -->
+      <nav
+        class="flex flex-row mx-autso justify-between h-16 mp-4 gap-8 font-interface"
+      >
+        <!-- Brand + Links -->
+        <div class="flex items-center gap-6">
+          <a class="flex items-center gap-2" href="../index.html">
+            <span class="material-symbols-outlined text-primary text-3xl"
+              >flight_takeoff</span
+            >
+            <span
+              class="text-2xl font-bold font-heading text-foreground-light dark:text-foreground-dark"
+              >EdgeFly</span
+            >
+          </a>
+          <!-- Flightsy -->
+          <a
+            class="text-sm font-medium text-text-light dark:text-[#ddd] hover:text-[#f7ce87] dark:hover:text-[#fff] transition-colors"
+            href="#guides"
+            >Flightsy</a
+          >
+          <!-- Docs -->
+          <a
+            class="text-sm font-medium text-text-light dark:text-[#ddd] text-[#f7ce87] dark:hover:text-[#fff] transition-colors"
+            href=""
+            >Docs</a
+          >
+          <!-- Featured -->
+          <a
+            class="text-sm font-medium text-text-light dark:text-[#ddd] hover:text-[#f7ce87] dark:hover:text-[#fff] transition-colors"
+            href="#features"
+            >Featured</a
+          >
+          <!-- Help -->
+          <a
+            class="hidden lg:flex text-sm font-medium text-text-light dark:text-[#ddd] hover:text-[#f7ce87] dark:hover:text-[#fff] transition-colors"
+            href="#help"
+            >Help</a
+          >
+        </div>
+
+        <!-- Toggleble stuff -->
+        <div class="flex items-center" id="searchInPage">
+          <!-- Search Box -->
+          <div
+            class="hidden md:flex max-w-[250px] items-center bg-background-dark/5 dark:bg-background-light/5 rounded-full px-4"
+          >
+            <span class="material-symbols-outlined cursor-pointer text-primary"
+              >search</span
+            >
+            <input
+              class="bg-transparent border-0 focus:ring-0 text-text-light dark:text-text-dark placeholder-text-muted-light dark:placeholder-text-muted-dark"
+              placeholder="Search flights..."
+              type="text"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Docs Main -->
+    <main class="pt-32 pbs-20 px-6 lg:px-20 space-y-24">
+      <!-- 🌍 Hero -->
+      <section id="overview" class="fade-in-start text-center">
+        <div class="max-w-3xl mx-auto space-y-4">
+          <h1 class="text-4xl font-heading font-bold">Welcome to EdgeFly</h1>
+          <p class="text-lg text-gray-600 dark:text-gray-300">
+            Your
+            <span class="text-[#FFBB00] font-semibold"
+              >AI-powered travel companion</span
+            >
+            for smarter, faster, and stress-free trip planning.
+          </p>
+          <div class="flex justify-center gap-4 mt-6">
+            <a
+              id="signin-page"
+              href="../pages/get_started.html"
+              class="px-5 py-2 bg-primary text-background-dark rounded-lg font-semibold hover:opacity-90 hover:shadow-lg slow-transitions"
+              >Get Started</a
+            >
+            <a
+              id="main-page"
+              href="/client/index.html"
+              class="px-5 py-2 border border-primary hover:border-[#000] text-[#FFBB00] rounded-lg font-semibold hover:text-[#000] hover:shadow-lg slow-transitions"
+              >Back to Dashboard</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ✈️ Getting Started -->
+      <section id="guides" class="fade-in-start">
+        <h2
+          class="text-3xl font-heading font-bold mb-8 border-b border-primary/40 pb-3 text-center"
+        >
+          Getting Started with EdgeFly
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="card-hover bg-subtle-light dark:bg-subtle-dark rounded-2xl p-6 text-center hover:shadow-lg slow-transitions"
+          >
+            <span class="material-symbols-outlined text-primary text-4xl mb-3"
+              >travel_explore</span
+            >
+            <h3 class="font-semibold text-lg mb-2">Search Flights</h3>
+            <p class="text-sm opacity-80">
+              Enter your destination, dates, and preferences. EdgeFly finds the
+              best deals instantly.
+            </p>
+          </div>
+          <div
+            class="card-hover bg-subtle-light dark:bg-subtle-dark rounded-2xl p-6 text-center hover:shadow-lg slow-transitions"
+          >
+            <span class="material-symbols-outlined text-primary text-4xl mb-3"
+              >favorite</span
+            >
+            <h3 class="font-semibold text-lg mb-2">Save & Wishlist</h3>
+            <p class="text-sm opacity-80">
+              Found something exciting? Save it for later and view it anytime in
+              your dashboard.
+            </p>
+          </div>
+          <div
+            class="card-hover bg-subtle-light dark:bg-subtle-dark rounded-2xl p-6 text-center hover:shadow-lg slow-transitions"
+          >
+            <span class="material-symbols-outlined text-primary text-4xl mb-3"
+              >person</span
+            >
+            <h3 class="font-semibold text-lg mb-2">Manage Account</h3>
+            <p class="text-sm opacity-80">
+              Easily access your profile, update info, or check your travel
+              history — all in one place.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 🤖 ELI Assistant -->
+      <section id="support" class="fade-in-start">
+        <h2
+          class="text-3xl font-heading font-bold mb-8 border-b border-primary/40 pb-3 text-center"
+        >
+          Meet ELI — Your AI Travel Buddy
+        </h2>
+        <div class="max-w-4xl mx-auto text-center space-y-6">
+          <p class="text-gray-700 dark:text-gray-300 text-base">
+            Chat with <strong>ELI (EdgeFly Intelligence)</strong> for real-time
+            flight suggestions and smart insights.
+          </p>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div
+              class="bg-subtle-light dark:bg-subtle-dark p-6 rounded-2xl text-left card-hover hover:shadow-lg slow-transitions"
+            >
+              <h3 class="flex gap-2 font-semibold mb-2 items-center">
+                <span class="material-symbols-outlined">search</span>
+                <span>How it works</span>
+              </h3>
+              <p class="text-sm opacity-80">
+                Ask ELI natural questions like “Find me flights to Paris this
+                weekend” and instantly see results or quick actions.
+              </p>
+            </div>
+            <div
+              class="bg-subtle-light dark:bg-subtle-dark p-6 rounded-2xl text-left card-hover hover:shadow-lg slow-transitions"
+            >
+              <h3 class="flex gap-2 font-semibold mb-2 items-center">
+                <span class="material-symbols-outlined">check_circle</span>
+                <span>Example</span>
+              </h3>
+              <p class="text-sm opacity-80">
+                <code>User:</code> Flights from Rome to Dubai next week.<br /><code
+                  >ELI:</code
+                >
+                Found 9 results — click “View Flights” to explore.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 💡 Features -->
+      <section id="features" class="fade-in-start">
+        <h2
+          class="text-3xl font-heading font-bold mb-8 border-b border-primary/40 pb-3 text-center"
+        >
+          Features You’ll Love
+        </h2>
+        <div class="grid md:grid-cols-4 gap-6 text-center">
+          <div
+            class="bg-subtle-light dark:bg-subtle-dark p-5 rounded-xl card-hover hover:shadow-lg slow-transitions"
+          >
+            <span class="material-symbols-outlined text-primary text-3xl mb-2"
+              >dashboard</span
+            >
+            <h4 class="font-semibold mb-1">Smart Dashboard</h4>
+            <p class="text-sm opacity-80">
+              Track searches, wishlists & trends at a glance.
+            </p>
+          </div>
+          <div
+            id="recents"
+            class="bg-subtle-light dark:bg-subtle-dark p-5 rounded-xl card-hover hover:shadow-lg slow-transitions"
+          >
+            <span class="material-symbols-outlined text-primary text-3xl mb-2"
+              >history</span
+            >
+            <h4 class="font-semibold mb-1">Search History</h4>
+            <p class="text-sm opacity-80">
+              View past flights or repeat searches quickly.
+            </p>
+          </div>
+          <div
+            class="bg-subtle-light dark:bg-subtle-dark p-5 rounded-xl card-hover hover:shadow-lg slow-transitions"
+          >
+            <span class="material-symbols-outlined text-primary text-3xl mb-2"
+              >recommend</span
+            >
+            <h4 class="font-semibold mb-1">Smart Recommendations</h4>
+            <p class="text-sm opacity-80">
+              Get ELI’s personalized travel suggestions.
+            </p>
+          </div>
+          <div
+            class="bg-subtle-light dark:bg-subtle-dark p-5 rounded-xl card-hover hover:shadow-lg slow-transitions"
+          >
+            <span class="material-symbols-outlined text-primary text-3xl mb-2"
+              >lock</span
+            >
+            <h4 class="font-semibold mb-1">Secure Auth</h4>
+            <p class="text-sm opacity-80">
+              Your sessions are always protected with JWT encryption.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ⚖️ Legal -->
+      <section id="legal" class="fade-in-start text-center">
+        <h2
+          class="text-3xl font-heading font-bold mb-6 border-b border-primary/40 pb-3"
+        >
+          Legal & Policies
+        </h2>
+        <div class="grid md:grid-cols-3 gap-6 mt-8">
+          <a
+            id="privacy"
+            href="#privacy"
+            class="p-6 bg-subtle-light dark:bg-subtle-dark rounded-xl card-hover hover:shadow-lg slow-transitions"
+          >
+            <h3 class="font-semibold mb-2">Privacy Policy</h3>
+            <p class="text-sm opacity-80">
+              Learn how we collect and use your information responsibly.
+            </p>
+          </a>
+          <a
+            id="terms"
+            href="#terms"
+            class="p-6 bg-subtle-light dark:bg-subtle-dark rounded-xl card-hover hover:shadow-lg slow-transitions"
+          >
+            <h3 class="font-semibold mb-2">Terms & Service</h3>
+            <p class="text-sm opacity-80">
+              Understand the usage rights and guidelines for EdgeFly.
+            </p>
+          </a>
+          <a
+            id="cookies"
+            href="#cookies"
+            class="p-6 bg-subtle-light dark:bg-subtle-dark rounded-xl card-hover hover:shadow-lg slow-transitions"
+          >
+            <h3 class="font-semibold mb-2">Cookie Policy</h3>
+            <p class="text-sm opacity-80">
+              See how we use cookies to enhance your experience.
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <!-- 🆕 Upcoming Section -->
+      <section id="upcoming" class="fade-in-start text-center">
+        <h2
+          class="text-3xl font-heading font-bold mb-8 border-b border-primary/40 pb-3"
+        >
+          Upcoming Features
+        </h2>
+        <p class="text-gray-600 dark:text-gray-300 mb-10 max-w-3xl mx-auto">
+          Here’s what’s coming next to make EdgeFly even smarter and more
+          personalized!
+        </p>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div
+            class="p-6 bg-subtle-light dark:bg-subtle-dark rounded-2xl card-hover hover:shadow-lg slow-transitions"
+          >
+            <span class="material-symbols-outlined text-primary text-4xl mb-2"
+              >book_online</span
+            >
+            <h3 class="font-semibold mb-2">Flight Bookings</h3>
+            <p class="text-sm opacity-80">
+              Book flights directly within EdgeFly using verified global APIs.
+            </p>
+          </div>
+          <div
+            class="p-6 bg-subtle-light dark:bg-subtle-dark rounded-2xl card-hover hover:shadow-lg slow-transitions"
+          >
+            <span class="material-symbols-outlined text-primary text-4xl mb-2"
+              >notifications_active</span
+            >
+            <h3 class="font-semibold mb-2">Email & Push Alerts</h3>
+            <p class="text-sm opacity-80">
+              Get real-time fare updates and travel reminders via email or app
+              notifications.
+            </p>
+          </div>
+          <div
+            class="p-6 bg-subtle-light dark:bg-subtle-dark rounded-2xl card-hover hover:shadow-lg slow-transitions"
+          >
+            <span class="material-symbols-outlined text-primary text-4xl mb-2"
+              >login</span
+            >
+            <h3 class="font-semibold mb-2">Social Sign-in</h3>
+            <p class="text-sm opacity-80">
+              Sign in effortlessly using Google or Facebook — faster and secure.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- User Help & Support Section -->
+      <section
+        id="help"
+        class="flex flex-col gap-10 mx-auto max-w-4xl px-6 pt-6 bg-background-light dark:bg-background-dark"
+      >
+        <!-- Help & Search Help -->
+        <div class="text-center">
+          <h2
+            class="text-3xl md:text-4xl text-balance font-bold font-heading pb-4 text-foreground-light dark:text-foreground-dark font-display tracking-[1px]"
+          >
+            Help &amp; Support
+          </h2>
+          <p
+            class="mt-4 text-lg text-background-dark/60 dark:text-background-light/60"
+          >
+            Find answers to common questions or contact our support team for
+            assistance.
+          </p>
+        </div>
+
+        <!-- Search FAQ -->
+        <div class="relative mx-6">
+          <span
+            class="material-symbols-outlined pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-background-dark/50 dark:text-background-light/50"
+            >search</span
+          >
+          <input
+            id="help-search-input"
+            class="w-full rounded-full shadow-lg border border-primary/20 bg-primary/10 py-3 pl-12 pr-4 font-display text-background-dark placeholder-background-dark/50 ring-offset-background-light focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 hover:shadow-lg slow-transitions"
+            placeholder="Search for help topics"
+            type="text"
+          />
+        </div>
+
+        <!-- Frequently Asked Questions -->
+        <div class="space-y-8" id="faq">
+          <div>
+            <h3
+              class="mb-6 text-2xl font-bold text-background-dark dark:text-background-light"
+            >
+              Frequently Asked Questions
+            </h3>
+            <div class="space-y-4">
+              <details
+                class="group rounded-lg shadow-md hover:shadow-lg border border-primary/20 bg-background-light p-4 transition-all duration-300 hover:border-primary/40 dark:border-primary/30 dark:bg-background-dark/50 dark:hover:border-primary/50"
+              >
+                <summary
+                  class="flex cursor-pointer list-none items-center justify-between font-medium text-background-dark dark:text-background-light"
+                >
+                  How do I search a flight?
+                  <span
+                    class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180"
+                    >expand_more</span
+                  >
+                </summary>
+                <p
+                  class="mt-4 text-background-dark/70 dark:text-background-light/70"
+                >
+                  Searching a flight on EdgeFly is simple. Use the search bar on
+                  the homepage to enter your departure and destination cities,
+                  travel dates, and number of passengers. Click "Search Flights"
+                  and our system, powered by Amadeus, will show you the best
+                  available options. You can then filter results and select your
+                  preferred flight to proceed with Journey.
+                </p>
+              </details>
+              <details
+                class="group rounded-lg shadow-md hover:shadow-lg border border-primary/20 bg-background-light p-4 transition-all duration-300 hover:border-primary/40 dark:border-primary/30 dark:bg-background-dark/50 dark:hover:border-primary/50"
+              >
+                <summary
+                  class="flex cursor-pointer list-none items-center justify-between font-medium text-background-dark dark:text-background-light"
+                >
+                  How does the flight search engine work?
+                  <span
+                    class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180"
+                    >expand_more</span
+                  >
+                </summary>
+                <p
+                  class="mt-4 text-background-dark/70 dark:text-background-light/70"
+                >
+                  Our flight search engine quickly scans available flights
+                  across multiple airlines and travel providers. Simply enter
+                  your departure and destination cities, travel dates, and
+                  number of passengers, and our system will display a list of
+                  available flights. You can filter and sort the results based
+                  on your preferences, like price, flight duration, or departure
+                  times.
+                </p>
+              </details>
+              <details
+                class="group rounded-lg shadow-md hover:shadow-lg border border-primary/20 bg-background-light p-4 transition-all duration-300 hover:border-primary/40 dark:border-primary/30 dark:bg-background-dark/50 dark:hover:border-primary/50"
+              >
+                <summary
+                  class="flex cursor-pointer list-none items-center justify-between font-medium text-background-dark dark:text-background-light"
+                >
+                  Does the flight search engine show all available airlines?
+                  <span
+                    class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180"
+                    >expand_more</span
+                  >
+                </summary>
+                <p
+                  class="mt-4 text-background-dark/70 dark:text-background-light/70"
+                >
+                  Yes, Our flight search engine shows flights from a wide range
+                  of airlines and travel agencies. However, some low-cost
+                  carriers or regional airlines may not always appear. If you’re
+                  looking for a specific airline, we recommend using the filters
+                  to narrow down your search to that airline.
+                </p>
+              </details>
+              <details
+                class="group rounded-lg shadow-md hover:shadow-lg border border-primary/20 bg-background-light p-4 transition-all duration-300 hover:border-primary/40 dark:border-primary/30 dark:bg-background-dark/50 dark:hover:border-primary/50"
+              >
+                <summary
+                  class="flex cursor-pointer list-none items-center justify-between font-medium text-background-dark dark:text-background-light"
+                >
+                  How accurate are the flight prices?
+                  <span
+                    class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180"
+                    >expand_more</span
+                  >
+                </summary>
+                <p
+                  class="mt-4 text-background-dark/70 dark:text-background-light/70"
+                >
+                  Flight prices displayed are generally accurate at the time of
+                  the search. However, prices can fluctuate due to changes in
+                  airline availability, demand, or other factors. If the price
+                  changes before you make your booking, we will notify you
+                  during the booking process.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Us -->
+        <div class="space-y-8">
+          <div>
+            <h3
+              class="mb-6 text-2xl font-bold text-background-dark dark:text-background-light"
+            >
+              Contact Us
+            </h3>
+            <p
+              class="mb-6 text-background-dark/70 dark:text-background-light/70"
+            >
+              If you need further assistance, our support team is ready to help.
+            </p>
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+              <div
+                class="flex flex-col shadow-md items-center rounded-lg border border-primary/20 bg-primary/10 p-6 text-center transition-colors hover:border-primary/40 dark:border-primary/30 dark:bg-primary/20 dark:hover:border-primary/50 cursor-pointer hover:shadow-lg slow-transitions"
+              >
+                <span
+                  class="material-symbols-outlined mb-4 text-4xl text-primary"
+                  >chat</span
+                >
+                <h4
+                  class="font-bold text-background-dark dark:text-background-light"
+                >
+                  Live Chat
+                </h4>
+                <p
+                  class="text-sm text-background-dark/60 dark:text-background-light/60"
+                >
+                  Available 24/7
+                </p>
+              </div>
+              <div
+                class="flex flex-col shadow-md items-center rounded-lg border border-primary/20 bg-primary/10 p-6 text-center transition-colors hover:border-primary/40 dark:border-primary/30 dark:bg-primary/20 dark:hover:border-primary/50 cursor-pointer hover:shadow-lg slow-transitions"
+              >
+                <span
+                  class="material-symbols-outlined mb-4 text-4xl text-primary"
+                  >email</span
+                >
+                <h4
+                  class="font-bold text-background-dark dark:text-background-light"
+                >
+                  Email
+                </h4>
+                <p
+                  class="text-sm text-background-dark/60 dark:text-background-light/60"
+                >
+                  Response within 24 hours
+                </p>
+              </div>
+              <div
+                class="flex flex-col shadow-md items-center rounded-lg border border-primary/20 bg-primary/10 p-6 text-center transition-colors hover:border-primary/40 dark:border-primary/30 dark:bg-primary/20 dark:hover:border-primary/50 cursor-pointer hover:shadow-lg slow-transitions"
+              >
+                <span
+                  class="material-symbols-outlined mb-4 text-4xl text-primary"
+                  >phone</span
+                >
+                <h4
+                  class="font-bold text-background-dark dark:text-background-light"
+                >
+                  Phone
+                </h4>
+                <p
+                  class="text-sm text-background-dark/60 dark:text-background-light/60"
+                >
+                  Mon-Fri, 9am - 5pm IST
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Docs Footer -->
+    <footer
+      class="bg-[#704a06] dark:bg-black text-white tracking-[1px] mt-8"
+      style="color: #fff"
+    >
+      <section
+        class="container max-w-7xl mx-auto px-4 py-6 md:px-6 select-none"
+      >
+        <!-- Footer Grid -->
+        <div class="grid gap-8 items-center grid-cols-2 lg:grid-cols-6">
+          <!-- Brand + Tagline + Social -->
+          <div class="space-y-4 col-span-2 mx-auto text-center sm:text-left">
+            <div class="flex justify-centeritems-center justify-center gap-2">
+              <a
+                title="EdgeFly"
+                class="flex items-center gap-2"
+                href="./dashboard.html"
+              >
+                <span class="material-symbols-outlined text-white text-3xl"
+                  >flight_takeoff</span
+                >
+                <span class="text-2xl font-bold font-heading text-white"
+                  >EdgeFly</span
+                >
+              </a>
+            </div>
+            <p class="text-sm text-white/80 hover:text-white">
+              Explore & Stay Connected!
+            </p>
+
+            <!-- Social Profiles -->
+            <div class="flex justify-center gap-4">
+              <!-- GMail -->
+              <a
+                title="GMail"
+                href="https://www.gmail.com/"
+                class="hover:text-primary hover:-translate-y-1 slow-transitions"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-at-sign-icon lucide-at-sign"
+                >
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8" />
+                </svg>
+              </a>
+              <!-- Instagram -->
+              <a
+                title="Instagram"
+                href="https://www.instagram.com/"
+                class="hover:text-primary hover:-translate-y-1 slow-transitions"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-instagram-icon lucide-instagram"
+                >
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                </svg>
+              </a>
+              <!-- Meta -->
+              <a
+                title="Meta"
+                href="https://www.meta.com/"
+                class="hover:text-primary hover:-translate-y-1 slow-transitions"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-facebook-icon lucide-facebook"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <!-- X -->
+              <a
+                title="Twitter - X"
+                href="https://x.com/"
+                class="hover:text-primary hover:-translate-y-1 slow-transitions"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-twitter-icon lucide-twitter"
+                >
+                  <path
+                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                  />
+                </svg>
+              </a>
+              <!-- LinkedIn -->
+              <a
+                title="LinkedIn"
+                href="https://www.linkedin.com/"
+                class="hover:text-primary hover:-translate-y-1 slow-transitions"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-linkedin-icon lucide-linkedin"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <!-- Telegram -->
+              <!-- <a
+                href="https://www.telegram.com/"
+                class="hover:text-primary hover:-translate-y-1 slow-transitions"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-send-icon lucide-send"
+                >
+                  <path
+                    d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"
+                  />
+                  <path d="m21.854 2.147-10.94 10.939" />
+                </svg>
+              </a> -->
+            </div>
+          </div>
+
+          <!-- Resources -->
+          <div class="space-y-3 mx-auto text-center lg:text-left">
+            <h3 class="text-sm font-semibold text-white">Resources</h3>
+            <ul class="space-y-2 text-sm text-white/80">
+              <li>
+                <a href="../pages/docs#overview" class="hover:text-[#fff]"
+                  >Documentation</a
+                >
+              </li>
+              <li>
+                <a href="../pages/docs#guides" class="hover:text-[#fff]"
+                  >Guides</a
+                >
+              </li>
+              <li>
+                <a href="../pages/docs#support" class="hover:text-[#fff]"
+                  >Support</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Product -->
+          <div class="space-y-3 mx-auto text-center lg:text-left">
+            <h3 class="text-sm font-semibold text-white">Product</h3>
+            <ul class="space-y-2 text-sm text-white/80">
+              <li>
+                <a href="../pages/docs#features" class="hover:text-[#fff]"
+                  >Search Flight</a
+                >
+              </li>
+              <li>
+                <a href="../pages/docs#features" class="hover:text-[#fff]"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a href="../pages/docs#features" class="hover:text-[#fff]"
+                  >Pricings</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div class="space-y-3 mx-auto text-center lg:text-left">
+            <h3 class="text-sm font-semibold text-white">Legal</h3>
+            <ul class="space-y-2 text-sm text-white/80">
+              <li>
+                <a href="../pages/docs#privacy" class="hover:text-[#fff]"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="../pages/docs#terms" class="hover:text-[#fff]"
+                  >Terms & Service</a
+                >
+              </li>
+              <li>
+                <a href="../pages/docs#cookies" class="hover:text-[#fff]"
+                  >Cookie Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Add Ons -->
+          <div class="space-y-3 mx-auto text-center lg:text-left">
+            <h3 class="text-sm font-semibold text-white">Add Ons</h3>
+            <ul class="space-y-2 text-sm text-white/80">
+              <li>
+                <a href="../pages/docs#recents" class="hover:text-[#fff]"
+                  >Recents</a
+                >
+              </li>
+              <li>
+                <a href="../pages/docs#faq" class="hover:text-[#fff]">FAQ</a>
+              </li>
+              <li>
+                <a href="../pages/docs#upcoming" class="hover:text-[#fff]"
+                  >Upcoming</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Divider + Credits -->
+        <div
+          class="mt-6 border-t border-white/40 pt-6 text-center text-sm text-white/80"
+        >
+          <p>
+            ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            EdgeFly. All rights reserved.
+          </p>
+        </div>
+      </section>
+    </footer>
+
+    <!-- 🧩 Toast Container (BOTTOM STACK) -->
+    <div
+      id="toast-container"
+      class="fixed bottom-6 right-6 z-[100] flex flex-col gap-3 items-end pointer-events-none"
+    ></div>
+
+    <!-- EdgeAPI Handler - client/pages/docs.html -->
+    <script type="module" src="../js/authGuard.js"></script>
+    <!-- 
+    <script type="module" src="../js/navGuard.js"></script>
+    <script type="module" src="../js/common.js"></script>
+    <script type="module" src="../js/reusables.js"></script> -->
+    <script type="module" src="../js/loader.js"></script>
+    <script type="module" src="../js/searchInPage.js"></script>
+
+    <!-- Docs Specific Scripts -->
+    <script>
+      /* ---------- SMOOTH SCROLL + OFFSET ---------- */
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          const targetId = this.getAttribute("href");
+          if (targetId && targetId !== "#") {
+            e.preventDefault();
+            const target = document.querySelector(targetId);
+            if (target) {
+              const offset = 160;
+              const topPos =
+                target.getBoundingClientRect().top +
+                window.pageYOffset -
+                offset;
+              window.scrollTo({ top: topPos, behavior: "smooth" });
+            }
+          }
+        });
+      });
+
+      /* ---------- ACTIVE NAV LINK ON SCROLL ---------- */
+      const navLinks = document.querySelectorAll('header nav a[href^="#"]');
+      const sections = Array.from(navLinks).map((link) =>
+        document.querySelector(link.getAttribute("href"))
+      );
+
+      window.addEventListener("scroll", () => {
+        const scrollPos = window.scrollY + 120;
+        sections.forEach((section, index) => {
+          if (!section) return;
+          const top = section.offsetTop;
+          const bottom = top + section.offsetHeight;
+          if (scrollPos >= top && scrollPos < bottom) {
+            navLinks.forEach((link) =>
+              link.classList.remove("text-primary", "font-semibold")
+            );
+            navLinks[index].classList.add("text-primary", "font-semibold");
+          }
+        });
+      });
+    </script>
+
+    <!-- ===== Smooth Scroll + Fade-In Scripts ===== -->
+    <script>
+      // ✅ Adjust scroll offset when arriving from external or footer links
+      window.addEventListener("load", () => {
+        const fullHref = window.location.href;
+        const hashMatch = fullHref.match(/#([a-zA-Z0-9_-]+)/);
+
+        if (hashMatch) {
+          const targetId = `#${hashMatch[1]}`;
+          const target = document.querySelector(targetId);
+          if (target) {
+            const offset = 350;
+            const topPos =
+              target.getBoundingClientRect().top + window.pageYOffset - offset;
+            setTimeout(() => {
+              window.scrollTo({ top: topPos, behavior: "smooth" });
+            }, 400);
+          }
+        }
+      });
+
+      // ✅ Fade-in sections
+      document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting)
+                entry.target.classList.add("fade-in-visible");
+            });
+          },
+          { threshold: 0.15 }
+        );
+        document
+          .querySelectorAll(".fade-in-start")
+          .forEach((el) => observer.observe(el));
+      });
+    </script>
+
+    <!-- ✅ Token-based button update -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const TOKEN_KEY = "edgefly_token";
+        const token = localStorage.getItem(TOKEN_KEY);
+        const mainBtn = document.getElementById("main-page");
+        const pageBtn = document.getElementById("signin-page");
+
+        if (!mainBtn) return;
+
+        if (token) {
+          mainBtn.textContent = "Back to Dashboard";
+          mainBtn.href = "../pages/dashboard.html";
+          pageBtn.textContent = "Get Started with ELI";
+          pageBtn.href = "../pages/dashboard.html#featured";
+        } else {
+          mainBtn.textContent = "Search Flights";
+          mainBtn.href = "/";
+          pageBtn.textContent = "Get Started";
+          pageBtn.href = "../pages/get_started.html";
+        }
+      });
+    </script>
+
+    <!-- ===== SearchInPage Scripts ===== -->
+    <script type="module">
+      import { initSearchInPage } from "../js/searchInPage.js";
+      document.addEventListener("DOMContentLoaded", initSearchInPage);
+    </script>
+  </body>
+</html>
