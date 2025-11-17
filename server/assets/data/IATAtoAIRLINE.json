@@ -1,0 +1,1066 @@
+{
+  "ZY": {
+    "index": 1,
+    "airline": "Ada Air"
+  },
+  "JP": {
+    "index": 2,
+    "airline": "Adria Airways \u2013 The Airline of Slovenia"
+  },
+  "EI": {
+    "index": 3,
+    "airline": "Aer Lingus Limited"
+  },
+  "E4": {
+    "index": 4,
+    "airline": "Aero Asia International (Private) Ltd."
+  },
+  "JR": {
+    "index": 5,
+    "airline": "Aero California"
+  },
+  "Z9": {
+    "index": 6,
+    "airline": "Aero Zambia"
+  },
+  "SU": {
+    "index": 7,
+    "airline": "Aeroflot \u2013 Russian International Airlines"
+  },
+  "AR": {
+    "index": 8,
+    "airline": "Aerolineas Argentinas"
+  },
+  "VX": {
+    "index": 9,
+    "airline": "Aerolineas Centrales de Colombia"
+  },
+  "AM": {
+    "index": 10,
+    "airline": "Aeromexico"
+  },
+  "QO": {
+    "index": 11,
+    "airline": "Aeromexpress S.A. de C.V."
+  },
+  "PL": {
+    "index": 12,
+    "airline": "Aeroperu \u2013 Empresa de Transportes"
+  },
+  "VV": {
+    "index": 13,
+    "airline": "Aerosvit Airlines"
+  },
+  "VE": {
+    "index": 14,
+    "airline": "Aerovias Venezolanas S.A."
+  },
+  "ZL": {
+    "index": 144,
+    "airline": "Hazelton Airlines"
+  },
+  "Y2": {
+    "index": 16,
+    "airline": "African Joint Air Services"
+  },
+  "RK": {
+    "index": 17,
+    "airline": "Air Afrique"
+  },
+  "AH": {
+    "index": 18,
+    "airline": "Air Algerie"
+  },
+  "UU": {
+    "index": 19,
+    "airline": "Air Austral"
+  },
+  "BT": {
+    "index": 20,
+    "airline": "Air Baltic Corporation S.A."
+  },
+  "AB": {
+    "index": 21,
+    "airline": "Air Berlin GmbH & Co. Luftverkehrs KG"
+  },
+  "JA": {
+    "index": 22,
+    "airline": "Air Bosna"
+  },
+  "BP": {
+    "index": 23,
+    "airline": "Air Botswana Corporation"
+  },
+  "SB": {
+    "index": 24,
+    "airline": "Air Caledonie International"
+  },
+  "AC": {
+    "index": 25,
+    "airline": "Air Canada"
+  },
+  "CA": {
+    "index": 26,
+    "airline": "Air China International Corporation"
+  },
+  "AG": {
+    "index": 27,
+    "airline": "Air Contractors (UK) Limited"
+  },
+  "UX": {
+    "index": 28,
+    "airline": "Air Europa Lineas Aereas S.A."
+  },
+  "AF": {
+    "index": 29,
+    "airline": "Air France"
+  },
+  "GN": {
+    "index": 30,
+    "airline": "Air Gabon"
+  },
+  "JM": {
+    "index": 31,
+    "airline": "Air Jamaica"
+  },
+  "JQ": {
+    "index": 32,
+    "airline": "Air Jamaica Express Limited"
+  },
+  "9Y": {
+    "index": 33,
+    "airline": "Air Kazakstan"
+  },
+  "JS": {
+    "index": 34,
+    "airline": "Air Koryo"
+  },
+  "IJ": {
+    "index": 35,
+    "airline": "Air Liberte"
+  },
+  "FU": {
+    "index": 36,
+    "airline": "Air Littoral"
+  },
+  "MD": {
+    "index": 37,
+    "airline": "Air Madagascar"
+  },
+  "QM": {
+    "index": 38,
+    "airline": "Air Malawi Limited"
+  },
+  "L6": {
+    "index": 39,
+    "airline": "Air Maldives Limited"
+  },
+  "KM": {
+    "index": 40,
+    "airline": "Air Malta p.l.c."
+  },
+  "CW": {
+    "index": 41,
+    "airline": "Air Marshall Islands Inc."
+  },
+  "MK": {
+    "index": 42,
+    "airline": "Air Mauritius"
+  },
+  "RM": {
+    "index": 43,
+    "airline": "Air Moldova"
+  },
+  "SW": {
+    "index": 44,
+    "airline": "Air Namibia"
+  },
+  "NZ": {
+    "index": 45,
+    "airline": "Air New Zealand Limited"
+  },
+  "PX": {
+    "index": 46,
+    "airline": "Air Niugini Pty Limited"
+  },
+  "YW": {
+    "index": 47,
+    "airline": "Air Nostrum L.A.M.S.A."
+  },
+  "FJ": {
+    "index": 48,
+    "airline": "Air Pacific Ltd."
+  },
+  "7W": {
+    "index": 49,
+    "airline": "Air Sask Aviation 1991"
+  },
+  "HM": {
+    "index": 50,
+    "airline": "Air Seychelles Limited"
+  },
+  "VT": {
+    "index": 51,
+    "airline": "Air Tahiti"
+  },
+  "TC": {
+    "index": 52,
+    "airline": "Air Tanzania Corporation"
+  },
+  "6U": {
+    "index": 53,
+    "airline": "Air Ukraine"
+  },
+  "NF": {
+    "index": 54,
+    "airline": "Air Vanuatu (Operations) Limited"
+  },
+  "UM": {
+    "index": 55,
+    "airline": "Air Zimbabwe Corporation"
+  },
+  "AI": {
+    "index": 56,
+    "airline": "Air-India Limited"
+  },
+  "AS": {
+    "index": 57,
+    "airline": "Alaska Airlines Inc."
+  },
+  "LV": {
+    "index": 58,
+    "airline": "Albanian Airlines MAK S.H.P.K."
+  },
+  "AZ": {
+    "index": 59,
+    "airline": "Alitalia \u2013 Linee Aeree Italiane"
+  },
+  "NH": {
+    "index": 60,
+    "airline": "All Nippon Airways Co. Ltd."
+  },
+  "LM": {
+    "index": 61,
+    "airline": "ALM 1997 Airline Inc., dba Air ALM"
+  },
+  "AQ": {
+    "index": 62,
+    "airline": "Aloha Airlines Inc."
+  },
+  "E8": {
+    "index": 63,
+    "airline": "ALPI Eagles S.p.A."
+  },
+  "HP": {
+    "index": 64,
+    "airline": "America West Airlines Inc."
+  },
+  "AA": {
+    "index": 65,
+    "airline": "American Airlines Inc."
+  },
+  "AN": {
+    "index": 66,
+    "airline": "Ansett Australia"
+  },
+  "ZQ": {
+    "index": 67,
+    "airline": "Ansett New Zealand"
+  },
+  "IW": {
+    "index": 68,
+    "airline": "AOM-Minerve S.A."
+  },
+  "FG": {
+    "index": 69,
+    "airline": "Ariana Afghan Airlines"
+  },
+  "IZ": {
+    "index": 70,
+    "airline": "Arkia \u2013 Israeli Airlines Ltd"
+  },
+  "R3": {
+    "index": 71,
+    "airline": "Armenian Airlines"
+  },
+  "5Y": {
+    "index": 72,
+    "airline": "Atlas Air Inc."
+  },
+  "IQ": {
+    "index": 73,
+    "airline": "Augsburg Airways GmbH"
+  },
+  "OS": {
+    "index": 74,
+    "airline": "Austrian Airlines"
+  },
+  "OT": {
+    "index": 75,
+    "airline": "Avant Airlines S.A."
+  },
+  "AO": {
+    "index": 76,
+    "airline": "Aviacion y Comercio S.A. (AVIACO)"
+  },
+  "AV": {
+    "index": 77,
+    "airline": "Avianca \u2013 Aerovias Nacionales de Colombia"
+  },
+  "GU": {
+    "index": 78,
+    "airline": "AVIATECA S.A."
+  },
+  "M4": {
+    "index": 79,
+    "airline": "Avioimpex A.D. p.o."
+  },
+  "J2": {
+    "index": 80,
+    "airline": "Azerbaijan Hava Yollary"
+  },
+  "LZ": {
+    "index": 81,
+    "airline": "Balkan \u2013 Bulgarian Airlines"
+  },
+  "B2": {
+    "index": 82,
+    "airline": "Belavia"
+  },
+  "B3": {
+    "index": 83,
+    "airline": "Bellview Airlines Ltd."
+  },
+  "BG": {
+    "index": 84,
+    "airline": "Biman Bangladesh Airlines"
+  },
+  "BU": {
+    "index": 85,
+    "airline": "Braathens ASA"
+  },
+  "BA": {
+    "index": 86,
+    "airline": "British Airways p.l.c."
+  },
+  "BD": {
+    "index": 87,
+    "airline": "British Midland Airways Ltd."
+  },
+  "BW": {
+    "index": 88,
+    "airline": "BWIA International Airways Limited"
+  },
+  "UY": {
+    "index": 89,
+    "airline": "Cameroon Airlines"
+  },
+  "CP": {
+    "index": 90,
+    "airline": "Canadian Airlines International Limited"
+  },
+  "CV": {
+    "index": 91,
+    "airline": "Cargolux Airlines International S.A."
+  },
+  "CX": {
+    "index": 92,
+    "airline": "Cathay Pacific Airways Ltd."
+  },
+  "MU": {
+    "index": 93,
+    "airline": "China Eastern Airlines"
+  },
+  "CJ": {
+    "index": 94,
+    "airline": "China Northern Airlines"
+  },
+  "WH": {
+    "index": 95,
+    "airline": "China Northwest Airlines"
+  },
+  "CZ": {
+    "index": 96,
+    "airline": "China Southern Airlines"
+  },
+  "SZ": {
+    "index": 97,
+    "airline": "China Southwest Airlines"
+  },
+  "XO": {
+    "index": 98,
+    "airline": "China Xinjiang Airlines"
+  },
+  "3Q": {
+    "index": 99,
+    "airline": "China Yunnan Airlines"
+  },
+  "AU": {
+    "index": 100,
+    "airline": "Cielos del Sur S.A."
+  },
+  "WX": {
+    "index": 101,
+    "airline": "Cityjet"
+  },
+  "MN": {
+    "index": 102,
+    "airline": "Comair Ltd."
+  },
+  "XK": {
+    "index": 103,
+    "airline": "Compagnie Aerienne Corse"
+  },
+  "E9": {
+    "index": 104,
+    "airline": "Compagnie Africaine d'Aviation (CAA)"
+  },
+  "5L": {
+    "index": 105,
+    "airline": "Compania Boliviana de Transporte Aereo"
+  },
+  "MX": {
+    "index": 106,
+    "airline": "Compania Mexicana de Aviacion"
+  },
+  "CO": {
+    "index": 107,
+    "airline": "Continental Airlines Inc."
+  },
+  "CS": {
+    "index": 108,
+    "airline": "Continental Micronesia Inc."
+  },
+  "CM": {
+    "index": 109,
+    "airline": "COPA \u2013 Compania Panamena de Aviacion"
+  },
+  "OU": {
+    "index": 110,
+    "airline": "Croatia Airlines"
+  },
+  "X5": {
+    "index": 111,
+    "airline": "Cronus Airlines"
+  },
+  "LX": {
+    "index": 112,
+    "airline": "Crossair Limited Company for European"
+  },
+  "CU": {
+    "index": 113,
+    "airline": "Cubana de Aviacion S.A."
+  },
+  "CY": {
+    "index": 114,
+    "airline": "Cyprus Airways"
+  },
+  "OK": {
+    "index": 115,
+    "airline": "Czech Airlines a.s. (CSA)"
+  },
+  "2G": {
+    "index": 116,
+    "airline": "Debonair Airways Ltd."
+  },
+  "DL": {
+    "index": 117,
+    "airline": "Delta Air Lines Inc."
+  },
+  "DI": {
+    "index": 118,
+    "airline": "Deutsche BA Luftfahrtgesellschaft mbH"
+  },
+  "LH": {
+    "index": 179,
+    "airline": "Lufthansa Cargo AG"
+  },
+  "ES": {
+    "index": 120,
+    "airline": "DHL International E.C."
+  },
+  "D7": {
+    "index": 121,
+    "airline": "Dinar Lineas Aereas S.A."
+  },
+  "Y4": {
+    "index": 122,
+    "airline": "Eagle Aviation Ltd."
+  },
+  "4S": {
+    "index": 123,
+    "airline": "East West Travel Trade Links Ltd."
+  },
+  "EU": {
+    "index": 124,
+    "airline": "Ecuatoriana de Aviacion S.A."
+  },
+  "MS": {
+    "index": 125,
+    "airline": "Egyptair"
+  },
+  "LY": {
+    "index": 126,
+    "airline": "El Al Israel Airlines Ltd."
+  },
+  "EK": {
+    "index": 127,
+    "airline": "Emirates"
+  },
+  "OV": {
+    "index": 128,
+    "airline": "Estonian Air"
+  },
+  "ET": {
+    "index": 129,
+    "airline": "Ethiopian Airlines Enterprise"
+  },
+  "QY": {
+    "index": 130,
+    "airline": "European Air Transport"
+  },
+  "EW": {
+    "index": 131,
+    "airline": "Eurowings AG"
+  },
+  "IH": {
+    "index": 132,
+    "airline": "Falcon Air AB"
+  },
+  "FX": {
+    "index": 133,
+    "airline": "FedEx"
+  },
+  "AY": {
+    "index": 134,
+    "airline": "Finnair Oyj"
+  },
+  "YC": {
+    "index": 135,
+    "airline": "Flight West Airlines Pty Ltd."
+  },
+  "BN": {
+    "index": 136,
+    "airline": "Forward Air International Airlines Inc."
+  },
+  "GA": {
+    "index": 137,
+    "airline": "Garuda Indonesia"
+  },
+  "GT": {
+    "index": 138,
+    "airline": "GB Airways Ltd."
+  },
+  "GH": {
+    "index": 139,
+    "airline": "Ghana Airways Corp."
+  },
+  "9C": {
+    "index": 140,
+    "airline": "Gill Aviation Ltd."
+  },
+  "G8": {
+    "index": 141,
+    "airline": "Gujarat Airways Limited"
+  },
+  "GF": {
+    "index": 142,
+    "airline": "Gulf Air Company G.S.C."
+  },
+  "HF": {
+    "index": 143,
+    "airline": "Hapag Lloyd Fluggesellschaft"
+  },
+  "DU": {
+    "index": 145,
+    "airline": "Hemus Air"
+  },
+  "KA": {
+    "index": 146,
+    "airline": "Hong Kong Dragon Airlines Limited"
+  },
+  "IB": {
+    "index": 147,
+    "airline": "Iberia \u2013 Lineas Aereas de Espana"
+  },
+  "FI": {
+    "index": 148,
+    "airline": "Icelandair"
+  },
+  "IC": {
+    "index": 149,
+    "airline": "Indian Airlines"
+  },
+  "D6": {
+    "index": 150,
+    "airline": "Inter-Aviation Services (InterAir)"
+  },
+  "IR": {
+    "index": 151,
+    "airline": "Iran Air"
+  },
+  "EP": {
+    "index": 152,
+    "airline": "Iran Aseman Airlines"
+  },
+  "IA": {
+    "index": 153,
+    "airline": "Iraqi Airways"
+  },
+  "LN": {
+    "index": 154,
+    "airline": "Jamahiriya Libyan Arab Airlines"
+  },
+  "JD": {
+    "index": 155,
+    "airline": "Japan Air System Co. Ltd."
+  },
+  "JL": {
+    "index": 156,
+    "airline": "Japan Airlines Company Ltd."
+  },
+  "JY": {
+    "index": 157,
+    "airline": "Jersey European Airways Ltd."
+  },
+  "9W": {
+    "index": 158,
+    "airline": "Jet Airways (India) Limited"
+  },
+  "JU": {
+    "index": 159,
+    "airline": "Jugoslovenski Aerotransport (JAT)"
+  },
+  "KD": {
+    "index": 160,
+    "airline": "Kendell Airlines"
+  },
+  "KQ": {
+    "index": 161,
+    "airline": "Kenya Airways"
+  },
+  "KL": {
+    "index": 162,
+    "airline": "KLM Royal Dutch Airlines"
+  },
+  "UK": {
+    "index": 163,
+    "airline": "KLM uk Ltd."
+  },
+  "KE": {
+    "index": 164,
+    "airline": "Korean Air Lines Co. Ltd."
+  },
+  "KU": {
+    "index": 165,
+    "airline": "Kuwait Airways"
+  },
+  "7Z": {
+    "index": 166,
+    "airline": "L.B. Limited"
+  },
+  "UC": {
+    "index": 168,
+    "airline": "Ladeco S.A. dba Ladeco Airlines"
+  },
+  "TM": {
+    "index": 169,
+    "airline": "LAM \u2013 Linhas Aereas de Mocambique"
+  },
+  "LP": {
+    "index": 170,
+    "airline": "Lan Peru S.A."
+  },
+  "NG": {
+    "index": 171,
+    "airline": "Lauda Air Luftfahrt AG"
+  },
+  "LA": {
+    "index": 172,
+    "airline": "Linea Aerea Nacional-Chile S.A."
+  },
+  "LR": {
+    "index": 173,
+    "airline": "Lineas Aereas Costarricenses S.A."
+  },
+  "MJ": {
+    "index": 174,
+    "airline": "Lineas Aereas Privadas Argentinas (LAPA)"
+  },
+  "TE": {
+    "index": 175,
+    "airline": "Lithuanian Airlines"
+  },
+  "LB": {
+    "index": 176,
+    "airline": "Lloyd Aereo Boliviano S.A. (LAB)"
+  },
+  "LO": {
+    "index": 177,
+    "airline": "LOT \u2013 Polish Airlines"
+  },
+  "LT": {
+    "index": 178,
+    "airline": "LTU International Airways"
+  },
+  "CL": {
+    "index": 180,
+    "airline": "Lufthansa CityLine GmbH"
+  },
+  "LG": {
+    "index": 181,
+    "airline": "Luxair"
+  },
+  "IN": {
+    "index": 182,
+    "airline": "Macedonian Airlines"
+  },
+  "DM": {
+    "index": 183,
+    "airline": "Maersk Air A/S"
+  },
+  "VB": {
+    "index": 184,
+    "airline": "Maersk Air Ltd."
+  },
+  "MH": {
+    "index": 185,
+    "airline": "Malaysian Airline System Berhad"
+  },
+  "MA": {
+    "index": 186,
+    "airline": "Malev Hungarian Airlines Public Limited"
+  },
+  "JE": {
+    "index": 187,
+    "airline": "Manx Airlines"
+  },
+  "IG": {
+    "index": 188,
+    "airline": "Meridiana S.p.A."
+  },
+  "MZ": {
+    "index": 189,
+    "airline": "Merpati Nusantara Airlines"
+  },
+  "OM": {
+    "index": 190,
+    "airline": "MIAT \u2013 Mongolian Airlines"
+  },
+  "ME": {
+    "index": 191,
+    "airline": "Middle East Airlines AirLiban"
+  },
+  "WT": {
+    "index": 192,
+    "airline": "Nigeria Airways Ltd."
+  },
+  "KZ": {
+    "index": 193,
+    "airline": "Nippon Cargo Airlines"
+  },
+  "NW": {
+    "index": 194,
+    "airline": "Northwest Airlines Inc."
+  },
+  "OA": {
+    "index": 195,
+    "airline": "Olympic Airways S.A."
+  },
+  "WY": {
+    "index": 196,
+    "airline": "Oman Aviation Services Co. (SAOG)"
+  },
+  "SG": {
+    "index": 197,
+    "airline": "P.T. Sempati Air"
+  },
+  "GX": {
+    "index": 198,
+    "airline": "Pacific Airways Corporation (Pacificair)"
+  },
+  "PK": {
+    "index": 199,
+    "airline": "Pakistan International Airlines"
+  },
+  "PR": {
+    "index": 200,
+    "airline": "Philippine Airlines Inc."
+  },
+  "PH": {
+    "index": 201,
+    "airline": "Polynesian Limited"
+  },
+  "NI": {
+    "index": 202,
+    "airline": "Portugalia \u2013 Companhia Portuguesa de Aviacao"
+  },
+  "PU": {
+    "index": 203,
+    "airline": "Primeras Lineas Uruguayas de Navegacion Aerea"
+  },
+  "QF": {
+    "index": 204,
+    "airline": "Qantas Airways Ltd."
+  },
+  "QR": {
+    "index": 205,
+    "airline": "Qatar Airways (W.L.L.)"
+  },
+  "7R": {
+    "index": 206,
+    "airline": "Red Sea Air"
+  },
+  "VM": {
+    "index": 207,
+    "airline": "Regional Airlines"
+  },
+  "GV": {
+    "index": 208,
+    "airline": "Riga Airlines"
+  },
+  "AT": {
+    "index": 209,
+    "airline": "Royal Air Maroc"
+  },
+  "BI": {
+    "index": 210,
+    "airline": "Royal Brunei Airlines Sdn. Bhd."
+  },
+  "RJ": {
+    "index": 211,
+    "airline": "Royal Jordanian"
+  },
+  "ZC": {
+    "index": 212,
+    "airline": "Royal Swazi National Airways Corp."
+  },
+  "WR": {
+    "index": 213,
+    "airline": "Royal Tongan Airlines"
+  },
+  "FR": {
+    "index": 214,
+    "airline": "Ryanair Ltd."
+  },
+  "4Z": {
+    "index": 215,
+    "airline": "SA Airlink"
+  },
+  "SN": {
+    "index": 216,
+    "airline": "SABENA"
+  },
+  "FA": {
+    "index": 217,
+    "airline": "Safair (Proprietary) Ltd."
+  },
+  "S2": {
+    "index": 218,
+    "airline": "Sahara Airlines Limited"
+  },
+  "E5": {
+    "index": 219,
+    "airline": "Samara Airlines"
+  },
+  "SP": {
+    "index": 220,
+    "airline": "SATA \u2013 Air Acores"
+  },
+  "SV": {
+    "index": 221,
+    "airline": "Saudi Arabian Airlines"
+  },
+  "SK": {
+    "index": 222,
+    "airline": "Scandinavian Airlines System (SAS)"
+  },
+  "FM": {
+    "index": 223,
+    "airline": "Shanghai Airlines"
+  },
+  "LJ": {
+    "index": 224,
+    "airline": "Sierra National Airlines"
+  },
+  "SQ": {
+    "index": 225,
+    "airline": "Singapore Airlines"
+  },
+  "JZ": {
+    "index": 226,
+    "airline": "Skyways AB"
+  },
+  "IE": {
+    "index": 227,
+    "airline": "Solomon Airlines"
+  },
+  "SA": {
+    "index": 228,
+    "airline": "South African Airways"
+  },
+  "A4": {
+    "index": 229,
+    "airline": "Southern Winds S.A."
+  },
+  "JK": {
+    "index": 230,
+    "airline": "Spanair S.A."
+  },
+  "UL": {
+    "index": 231,
+    "airline": "SriLankan Airlines Limited"
+  },
+  "SD": {
+    "index": 232,
+    "airline": "Sudan Airways Co. Ltd."
+  },
+  "PI": {
+    "index": 233,
+    "airline": "Sunflower Airlines Ltd."
+  },
+  "PY": {
+    "index": 234,
+    "airline": "Surinam Airways Ltd."
+  },
+  "SR": {
+    "index": 235,
+    "airline": "Swiss Air Transport Co. Ltd. (Swissair)"
+  },
+  "RB": {
+    "index": 236,
+    "airline": "Syrian Arab Airlines"
+  },
+  "VD": {
+    "index": 237,
+    "airline": "T.A.T. European Airlines"
+  },
+  "DT": {
+    "index": 238,
+    "airline": "TAAG \u2013 Linhas Aereas de Angola"
+  },
+  "TA": {
+    "index": 239,
+    "airline": "TACA International Airlines S.A."
+  },
+  "JJ": {
+    "index": 240,
+    "airline": "TAM \u2013 Transportes Aereos (Brazil)"
+  },
+  "PZ": {
+    "index": 241,
+    "airline": "TAM \u2013 Transportes Aereos del Mercosur"
+  },
+  "KK": {
+    "index": 242,
+    "airline": "TAM \u2013 Transportes Aereos Regionais S.A."
+  },
+  "TP": {
+    "index": 243,
+    "airline": "TAP \u2013 Air Portugal"
+  },
+  "RO": {
+    "index": 244,
+    "airline": "TAROM \u2013 Romanian Air Transport"
+  },
+  "TG": {
+    "index": 245,
+    "airline": "Thai Airways International Public"
+  },
+  "NM": {
+    "index": 246,
+    "airline": "The Mount Cook Group Ltd."
+  },
+  "FF": {
+    "index": 247,
+    "airline": "Tower Air Inc."
+  },
+  "TW": {
+    "index": 248,
+    "airline": "Trans World Airlines Inc."
+  },
+  "TL": {
+    "index": 249,
+    "airline": "Trans Mediterranean Airways"
+  },
+  "UN": {
+    "index": 250,
+    "airline": "Transaero Airlines"
+  },
+  "HV": {
+    "index": 251,
+    "airline": "Transavia Airlines"
+  },
+  "TR": {
+    "index": 252,
+    "airline": "Transbrasil S.A. Linhas Aereas"
+  },
+  "GD": {
+    "index": 253,
+    "airline": "Transportes Aereos Ejecutivos S.A. de C.V."
+  },
+  "TU": {
+    "index": 254,
+    "airline": "Tunisair"
+  },
+  "TK": {
+    "index": 255,
+    "airline": "Turkish Airlines Inc."
+  },
+  "T5": {
+    "index": 256,
+    "airline": "Turkmenistan Airlines"
+  },
+  "PS": {
+    "index": 257,
+    "airline": "Ukraine International Airlines"
+  },
+  "UA": {
+    "index": 258,
+    "airline": "United Airlines Inc."
+  },
+  "5X": {
+    "index": 259,
+    "airline": "UPS (United Parcel Service)"
+  },
+  "US": {
+    "index": 260,
+    "airline": "US Airways Inc."
+  },
+  "RG": {
+    "index": 261,
+    "airline": "Varig S.A."
+  },
+  "VP": {
+    "index": 262,
+    "airline": "Viacao Aerea Sao Paulo S.A. (VASP)"
+  },
+  "VS": {
+    "index": 263,
+    "airline": "Virgin Atlantic Airways Limited"
+  },
+  "8D": {
+    "index": 264,
+    "airline": "Volare Airlines S.p.A."
+  },
+  "WF": {
+    "index": 265,
+    "airline": "Wideroe\u2019s Flyveselskap A.S."
+  },
+  "MF": {
+    "index": 266,
+    "airline": "Xiamen Airlines"
+  },
+  "IY": {
+    "index": 267,
+    "airline": "Yemenia \u2013 Yemen Airways"
+  },
+  "Q3": {
+    "index": 268,
+    "airline": "Zambian Airways"
+  },
+  "Z7": {
+    "index": 269,
+    "airline": "Zimbabwe Express Airlines"
+  }
+}
